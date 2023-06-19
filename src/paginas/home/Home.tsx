@@ -1,5 +1,5 @@
 import React from "react";
-import {Typography, Grid, Button} from '@material-ui/core';
+import {Typography, Grid} from '@material-ui/core';
 import {Box} from '@mui/material';
 import './Home.css';
 
@@ -10,17 +10,12 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
-                    </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                        </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Aumente seus contatos e sua formação como pequeno produtor</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Esteja você comprando, anunciando ou alugando, podemos ajudá-lo</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px"/>  
+                <img src="/src/assets/imagens/agricultor.avif" alt="" width="500px" height="500px"/>  
                 </Grid>
                 <Grid xs={12} className='postagens'>
                 </Grid>
