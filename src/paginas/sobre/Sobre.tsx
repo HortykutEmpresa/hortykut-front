@@ -24,7 +24,7 @@ O Hortykut está revolucionando a forma como os profissionais do setor agrícola
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                <img src="https://img.freepik.com/vetores-gratis/agricultores-segurando-produtos-diferentes_23-2148525754.jpg" alt="" width="500px" height="500px"/>  
+                <img src="src/assets/imagens/casacampo.png" alt="Ilustração de uma casa no campo, com Sol ao fundo." width="500px" height="500px"/>  
                 </Grid>
                 
             </Grid>

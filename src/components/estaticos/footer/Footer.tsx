@@ -13,17 +13,17 @@ function Footer() {
       <Grid container direction="row" justifyContent="center" alignItems="center" style={{backgroundColor:"9ef5cf" }}>
         <Grid container justifyContent="space-between" >
           <Box>
-            <img src="https://st3.depositphotos.com/31445094/36396/v/600/depositphotos_363967856-stock-illustration-green-leaf-ecology-nature-element.jpg" alt="imagem de uma planta generica" style={{width:"20em"}}/>
+            <img src="https://img.freepik.com/fotos-gratis/agricultor-agronomo-senior-trabalhador-no-campo-de-soja-verificando-as-colheitas-antes-da-colheita_342744-1260.jpg?w=740&t=st=1687223072~exp=1687223672~hmac=89073e06e77cf534ca9dd3784ec8fb8b7a9509e88aa610d76bbfa62e83238b88" alt="Foto de um senhor colhendo verduras em sua plantação" style={{width:"20em"}}/>
           </Box>
           <Box>
-            <img src="https://st3.depositphotos.com/31445094/36396/v/600/depositphotos_363967856-stock-illustration-green-leaf-ecology-nature-element.jpg" alt="imagem de uma planta generica" style={{width:"20em"}}/>
+            <img src="https://img.freepik.com/fotos-gratis/mulher-asiatica-feliz-escreva-notas-nos-campos-de-arroz_1150-28326.jpg?w=740&t=st=1687223116~exp=1687223716~hmac=eb0cecd93141fe7eb8acf4454a73427670333dbb1b613ea6b94a848b33b4f1f8" alt="Foto de uma mulher em sua plantação" style={{width:"20em"}}/>
           </Box>
           <Box>
-            <img src="https://st3.depositphotos.com/31445094/36396/v/600/depositphotos_363967856-stock-illustration-green-leaf-ecology-nature-element.jpg" alt="imagem de uma planta generica" style={{width:"20em"}}/>
+            <img src="https://img.freepik.com/fotos-gratis/caixa-de-madeira-cheia-de-vegetais-frescos_329181-8749.jpg?w=740&t=st=1687223180~exp=1687223780~hmac=17f44efc1440903bea4a83df6db2578f28dd7031e1ee62e57632f561f93c94c8" alt="Caixa de madeira cheia de vegetais frescos" style={{width:"20em"}}/>
           </Box>
         </Grid>
         <Grid>
-          <img src="https://img.freepik.com/icones-gratis/plantar_318-247366.jpg?q=10&h=200" alt="imagem de uma planta generica" />
+          <img src="src/assets/imagens/fazendeira.png" alt="imagem de uma planta generica" />
         <Typography style={{fontSize: "3em"}}> Entre em contato conosco</Typography>
         </Grid>
         <Grid alignItems="center" item xs={12}>
