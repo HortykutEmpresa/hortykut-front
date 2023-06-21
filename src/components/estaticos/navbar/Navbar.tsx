@@ -14,7 +14,8 @@ function Navbar() {
                             Hortykut 
                         </Typography>
                     </Box>
-                    <Box display="flex " justifyContent="start">
+
+                    <Box display="flex" justifyContent="start">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" style={{color: "white"}}>
                                 Venda
@@ -23,6 +24,7 @@ function Navbar() {
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" style={{color: "white"}}>
                                 Compra
+                            </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" style={{color: "white"}}>
@@ -61,12 +63,11 @@ function Navbar() {
                                 </Typography>
                             </Box>                            
                         </Link>
-                    </Box>               
+                    </Box>                    
+                </Toolbar>
+            </AppBar>
+        </>
+    )
+}
 
-                            <Typography variant="h6" style={{ color: "#2a2a2a" }}>
-                                Home
-                            </Typography>
-                        </Box>
-                        <Box display="flex" justifyContent="start">
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" style={{ color: "#2a2a2a" }}>
+export default Navbar;
