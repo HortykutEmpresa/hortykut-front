@@ -22,19 +22,19 @@
     color: white;
 }
 
-.caixaFooter{    
+.caixaFooter {
     background-image: url("/src/assets/imagens/laranjeira_fundo.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .footer2 {
-    width: 15em;    
-    background-color: blue;
-    padding: 30px auto;    
+    width: 15em;
+    padding: 30px auto;
 }
 
-.grid{
-    background-color: yellow;
+.grid {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }

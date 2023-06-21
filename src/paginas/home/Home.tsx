@@ -16,7 +16,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                <img src="/src/assets/imagens/fazenda.png" alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" width="500px" height="500px"/>  
+                <img src="" alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" />  
                 </Grid>
                 <Grid xs={12} className='produtos'>
                     <TabProdutos />

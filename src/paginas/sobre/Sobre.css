@@ -1,3 +1,16 @@
-.sobre-container {
-    /* parte do Both */
-  }
+.caixaSobre {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: antiquewhite;
+}
+
+.titulo {
+  color: #464248 !important;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.texto {
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;   
+}

@@ -14,7 +14,7 @@ function TabProdutos() {
     return (
         <>
             <TabContext value={value}>
-                <AppBar position="static">
+                <AppBar position="static" style={{background: "#ffa200"}}>
                     <Tabs centered indicatorColor="secondary" onChange={handleChange}>
                         <Tab label="Lista de todos os cursos" value="1" />
                     </Tabs>

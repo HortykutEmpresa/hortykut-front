@@ -24,9 +24,10 @@ function Footer() {
         </Grid>
         <Grid className='grid'>
           <img src="https://www.svgrepo.com/show/475188/corn.svg" alt="Ilustração de um milho" className='footer2' />
-          <img src="https://www.svgrepo.com/show/475232/tomato.svg" alt="Ilustração de um tomate" />
-          <img src="https://www.svgrepo.com/show/475178/beet.svg" alt="Ilustração de uma beterraba"  />
-        <Typography style={{fontSize: "3em"}}> Entre em contato conosco</Typography>
+          <img src="https://www.svgrepo.com/show/475232/tomato.svg" alt="Ilustração de um tomate" className='footer2' />
+          <img src="https://www.svgrepo.com/show/475178/beet.svg" alt="Ilustração de uma beterraba" className='footer2' />
+          <img src="https://www.svgrepo.com/show/475214/pineapple.svg" alt="Ilustração de um abacaxi" className='footer2' />   
+          <img src="https://www.svgrepo.com/show/475221/radish.svg" alt="Ilustração de um rabanete" className='footer2' />           
         </Grid>
         <Grid alignItems="center" item xs={12}>
           <Box paddingTop={1} display={"flex"} alignItems={"center"}justifyContent={"center"} className='caixaFooter'>
