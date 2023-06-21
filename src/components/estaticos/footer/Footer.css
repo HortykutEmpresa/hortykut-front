@@ -1,3 +1,8 @@
+.imgFooter {
+    width: 35em;
+    margin-top: 1em;
+}
+
 .box1 {
     background-color: #3F51B5;
     height: 120px;
@@ -15,4 +20,21 @@
 
 .textos {
     color: white;
+}
+
+.caixaFooter{    
+    background-image: url("/src/assets/imagens/laranjeira_fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.footer2 {
+    width: 15em;    
+    background-color: blue;
+    padding: 30px auto;    
+}
+
+.grid{
+    background-color: yellow;
+    width: 100%;
 }
