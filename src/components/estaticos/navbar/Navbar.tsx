@@ -56,7 +56,9 @@ function Navbar() {
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
-                            <Typography variant="h6" style={{ color: "white", background: "#ff7b00" }}>
+
+                            <Typography variant="h6" style={{color: "#464248", background: "#fffd8b"}}>
+
                                 Faça Parte
                             </Typography>
                         </Box>
