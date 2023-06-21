@@ -4,6 +4,7 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import Sobre from './paginas/sobre/Sobre';
 import ListaProdutos from './components/listaprodutos/ListaProdutos';
+import Planos from './paginas/planos/Planos';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/cursos" element={<ListaProdutos />} />
+        <Route path="/planos" element={<Planos />} />
       </Routes>
     </BrowserRouter>
   );
