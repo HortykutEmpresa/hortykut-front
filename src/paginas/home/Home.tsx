@@ -1,6 +1,7 @@
 import React from "react";
 import {Typography, Grid} from '@material-ui/core';
 import {Box} from '@mui/material';
+import TabProdutos from "../../components/tabprodutos/TabProdutos";
 import './Home.css';
 
 
@@ -17,7 +18,8 @@ function Home() {
                 <Grid item xs={6} >
                 <img src="/src/assets/imagens/fazenda.png" alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" width="500px" height="500px"/>  
                 </Grid>
-                <Grid xs={12} className='postagens'>
+                <Grid xs={12} className='produtos'>
+                    <TabProdutos />
                 </Grid>
             </Grid>
         </>
