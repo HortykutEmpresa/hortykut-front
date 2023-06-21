@@ -16,18 +16,13 @@ function TabProdutos() {
             <TabContext value={value}>
                 <AppBar position="static">
                     <Tabs centered indicatorColor="secondary" onChange={handleChange}>
-                        <Tab label="Todas os produtos" value="1" />
-                        <Tab label="Sobre-nós" value="2" />
+                        <Tab label="Lista de todos os cursos" value="1" />
                     </Tabs>
                 </AppBar>
                 <TabPanel value="1" >
                     <Box display="flex" flexWrap="wrap" justifyContent="center">
                         <ListaProdutos />
                     </Box>
-                </TabPanel>
-                <TabPanel value="2">
-                    <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
-                    <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Descrição sobre nós</Typography>
                 </TabPanel>
             </TabContext>
         </>

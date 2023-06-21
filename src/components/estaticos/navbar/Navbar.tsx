@@ -31,11 +31,13 @@ function Navbar() {
                                 Transporte
                             </Typography>
                         </Box>
+                        <Link to='/cursos' className='text-decorator-none'>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" style={{color: "white"}}>
                                 Cursos
                             </Typography>
                         </Box>
+                        </Link>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" style={{color: "white"}}>
                                 Planos
