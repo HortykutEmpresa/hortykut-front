@@ -7,7 +7,6 @@ import CardMedia from '@mui/material/CardMedia';
 function Depoimentos() {
 
     return (
-
         <>
             <Container>
                 <Box>

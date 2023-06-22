@@ -6,7 +6,7 @@ import Depoimentos from "../depoimentos/Depoimentos";
 import Footer from "../../components/estaticos/footer/Footer";
 import './Home.css';
 import Navbar from "../../components/estaticos/navbar/Navbar";
-import Footer from "../../components/estaticos/footer/Footer";
+import ListaProdutos from "../../components/listaprodutos/ListaProdutos";
 
 function Home() {
     return (
@@ -23,12 +23,10 @@ function Home() {
                 <img src="/src/assets/imagens/Country-side-cuate.png" alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" style={{width: '53em'}} />  
                 </Grid>
                 <Grid xs={12} className='produtos'>
-                    <TabProdutos />
+                    <ListaProdutos />
                 </Grid>
             </Grid>
-
             <Footer />
-
         </>
     );
 }
