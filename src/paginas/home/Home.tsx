@@ -2,6 +2,8 @@ import React from "react";
 import {Typography, Grid} from '@material-ui/core';
 import {Box} from '@mui/material';
 import TabProdutos from "../../components/tabprodutos/TabProdutos";
+import Depoimentos from "../depoimentos/Depoimentos";
+import Footer from "../../components/estaticos/footer/Footer";
 import './Home.css';
 import Navbar from "../../components/estaticos/navbar/Navbar";
 import Footer from "../../components/estaticos/footer/Footer";
@@ -24,7 +26,9 @@ function Home() {
                     <TabProdutos />
                 </Grid>
             </Grid>
+
             <Footer />
+
         </>
     );
 }

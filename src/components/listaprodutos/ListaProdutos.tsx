@@ -47,7 +47,6 @@ function ListaProdutos() {
                         </CardActions>
                     </Card>
                 </Box>
-
                 <Box m={2} >
                     <Card variant="outlined">
                         <CardContent>
@@ -84,6 +83,7 @@ function ListaProdutos() {
                     </Card>
                 </Box>
 
+
                 <Box m={2} >
                     <Card variant="outlined">
                         <CardContent>
@@ -109,6 +109,7 @@ function ListaProdutos() {
                         <CardActions>
                             <Box display="flex" justifyContent="center" mb={1.5}>
 
+
                                 <Link to="" className="text-decorator-none" >
                                     <Box mx={1}>
                                         <Button variant="contained" className="marginLeft" size='small' color="primary" >
@@ -120,6 +121,7 @@ function ListaProdutos() {
                         </CardActions>
                     </Card>
                 </Box>
+
 
                 <Box m={2} >
                     <Card variant="outlined">
@@ -146,6 +148,7 @@ function ListaProdutos() {
                         <CardActions>
                             <Box display="flex" justifyContent="center" mb={1.5}>
 
+
                                 <Link to="" className="text-decorator-none" >
                                     <Box mx={1}>
                                         <Button variant="contained" className="marginLeft" size='small' color="primary" >
@@ -157,6 +160,7 @@ function ListaProdutos() {
                         </CardActions>
                     </Card>
                 </Box>
+
 
                 <Box m={2} >
                     <Card variant="outlined">
@@ -183,6 +187,7 @@ function ListaProdutos() {
                         <CardActions>
                             <Box display="flex" justifyContent="center" mb={1.5}>
 
+
                                 <Link to="" className="text-decorator-none" >
                                     <Box mx={1}>
                                         <Button variant="contained" className="marginLeft" size='small' color="primary" >
@@ -194,6 +199,7 @@ function ListaProdutos() {
                         </CardActions>
                     </Card>
                 </Box>
+
 
                 <Box m={2} >
                     <Card variant="outlined">
@@ -219,6 +225,7 @@ function ListaProdutos() {
                         </CardContent>
                         <CardActions>
                             <Box display="flex" justifyContent="center" mb={1.5}>
+
 
                                 <Link to="" className="text-decorator-none" >
                                     <Box mx={1}>
