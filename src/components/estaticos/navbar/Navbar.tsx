@@ -10,9 +10,7 @@ function Navbar() {
             <AppBar position="static" className="appbar">
                 <Toolbar variant="dense" className='toolbar'>
                     <Box className='cursor'>
-                        <Typography variant="h5" style={{ color: "white" }}>
-                            Hortykut
-                        </Typography>
+                        <img src="/src/assets/imagens/logo-texto-transparente.png" alt="Logo horizontal transparente" style={{width: "9em"}} />
                     </Box>
 
                     <Box display="flex" justifyContent="start">
