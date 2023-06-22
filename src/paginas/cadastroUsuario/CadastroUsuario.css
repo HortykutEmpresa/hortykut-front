@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Roboto&display=swap');
 
-.textos1 {
-    font-weight: bold !important;
-    font-family: 'Roboto', sans-serif;
-}
-
-.imagem {
+.imagem2 {
     background-image: url(/src/assets/imagens/laranjeira_fundo.jpg);
     background-repeat: no-repeat;
     width: 100vh;
@@ -14,7 +9,12 @@
     background-position: center;
 }
 
-.text-decorator-none {
-    text-decoration: none;
+.textos2 {
+    font-weight: bold !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btnCancelar {
+    margin-right: 20px !important;
     font-family: 'Roboto', sans-serif;
 }
