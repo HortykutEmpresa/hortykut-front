@@ -241,7 +241,7 @@ function ListaProdutos() {
                     </Card>
                 </Box>
             </Grid>
-            <Footer />
+            
         </>
     )
 }
