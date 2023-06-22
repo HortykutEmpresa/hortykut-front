@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
+import { Card, CardActions, CardContent, Button, Typography, Grid, AppBar, Tabs, Tab } from '@material-ui/core';
 import { Box } from '@mui/material';
 import CardMedia from '@mui/material/CardMedia';
 import './ListaProdutos.css';
@@ -10,7 +10,11 @@ import Footer from '../estaticos/footer/Footer';
 function ListaProdutos() {
     return (
         <>
-            <Navbar />
+            <AppBar position="static" style={{ background: "#ffa200" }}>
+                <Tabs centered indicatorColor="secondary">
+                    <Tab label="Lista de todos os cursos" value="1" />
+                </Tabs>
+            </AppBar>
             <Grid className='gridPlano'>
                 <Box m={2}>
                     <Card variant="outlined">
@@ -200,7 +204,6 @@ function ListaProdutos() {
                     </Card>
                 </Box>
 
-
                 <Box m={2} >
                     <Card variant="outlined">
                         <CardContent>
@@ -226,7 +229,6 @@ function ListaProdutos() {
                         <CardActions>
                             <Box display="flex" justifyContent="center" mb={1.5}>
 
-
                                 <Link to="" className="text-decorator-none" >
                                     <Box mx={1}>
                                         <Button variant="contained" className="marginLeft" size='small' color="primary" >
@@ -239,7 +241,7 @@ function ListaProdutos() {
                     </Card>
                 </Box>
             </Grid>
-            <Footer />
+            
         </>
     )
 }
