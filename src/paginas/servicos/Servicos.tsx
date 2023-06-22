@@ -26,13 +26,17 @@ function Servicos() {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
+    const [open2, setOpen2] = React.useState(false);
+    const handleOpen2 = () => setOpen2(true);
+    const handleClose2 = () => setOpen2(false);
+
     return (
 
         <>
             <Box>
                 <CardContent>
                     <Card sx={{ maxWidth: 345 }} >
-                        <CardActionArea onClick={handleOpen}>
+                        <CardActionArea onClick={handleOpen2}>
                             <CardMedia
                                 component="img"
                                 height="200"
@@ -52,8 +56,8 @@ function Servicos() {
                     </Card>
                 </CardContent>
                 <Modal
-                    open={open}
-                    onClose={handleClose}
+                    open={open2}
+                    onClose={handleClose2}
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                 >
@@ -62,7 +66,8 @@ function Servicos() {
                             Você sabe o que é a mentoria?
                         </Typography>
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            Descrição da mentoria
+                            A agricultura é uma das atividades mais antigas do mundo e continua sendo uma das mais importantes e necessárias para a sobrevivência humana. No entanto, a complexidade do setor agrícola e as mudanças constantes do mercado podem ser desafiadoras para os produtores. É por isso que a mentoria em agricultura é tão importante.
+                            A mentoria em agricultura oferece orientação e ensino para aqueles que desejam melhorar suas habilidades e conhecimentos na área. Isso pode incluir a plantação, gerenciamento de recursos, técnicas de colheita e muito mais. A mentoria também pode ajudar os agricultores a se adaptarem às mudanças do mercado e a identificar novas oportunidades para seus negócios.
                         </Typography>
                     </Box>
                 </Modal>
@@ -93,14 +98,14 @@ function Servicos() {
                 <Modal
                     open={open}
                     onClose={handleClose}
-                    aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description"
+                    aria-labelledby="modal-modal"
+                    aria-describedby="modal-modal"
                 >
                     <Box sx={style}>
-                        <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Typography id="modal-modal" variant="h6" component="h2">
                             Você sabe o que são conexões?
                         </Typography>
-                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                        <Typography id="modal-modal" sx={{ mt: 2 }}>
                             Descrição das conexoes
                         </Typography>
                     </Box>
