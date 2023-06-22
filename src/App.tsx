@@ -6,6 +6,7 @@ import Sobre from './paginas/sobre/Sobre';
 import ListaProdutos from './components/listaprodutos/ListaProdutos';
 import Planos from './paginas/planos/Planos';
 import './App.css';
+import Depoimentos from './paginas/depoimentos/Depoimentos';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/cursos" element={<ListaProdutos />} />
         <Route path="/planos" element={<Planos />} />
+        <Route path="/depoimentos" element={<Depoimentos />} />
       </Routes>
     </BrowserRouter>
   );
