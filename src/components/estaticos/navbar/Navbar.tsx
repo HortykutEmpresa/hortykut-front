@@ -14,62 +14,68 @@ function Navbar() {
                             Hortykut
                         </Typography>
                     </Box>
-
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" style={{ color: "white" }}>
-                                Venda
+                                Home
                             </Typography>
                         </Box>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" style={{ color: "white" }}>
-                                Compra
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" style={{ color: "white" }}>
-                                Transporte
-                            </Typography>
-                        </Box>
-                        <Link to='/cursos' className='text-decorator-none'>
+                        <Box display="flex" justifyContent="start">
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" style={{ color: "white" }}>
-                                    Cursos
+                                    Venda
                                 </Typography>
                             </Box>
-                        </Link>
-                        <Link to='/planos' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" style={{ color: "white" }}>
-                                    Planos
+                                    Compra
                                 </Typography>
                             </Box>
-                        </Link>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" style={{ color: "white" }}>
-                                Sobre Nós
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" style={{ color: "white" }}>
-                                Suporte
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor'>
-
-                            <Typography variant="h6" style={{color: "#464248", background: "#fffd8b"}}>
-
-                                Faça Parte
-                            </Typography>
-                        </Box>
-                        <Link to='/login' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" style={{ color: "white", background: "#464248" }}>
-                                    Logout
+                                <Typography variant="h6" style={{ color: "white" }}>
+                                    Transporte
                                 </Typography>
                             </Box>
-                        </Link>
-                    </Box>
+                            <Link to='/cursos' className='text-decorator-none'>
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" style={{ color: "white" }}>
+                                        Cursos
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Link to='/planos' className='text-decorator-none'>
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" style={{ color: "white" }}>
+                                        Planos
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" style={{ color: "white" }}>
+                                    Sobre Nós
+                                </Typography>
+                            </Box>
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" style={{ color: "white" }}>
+                                    Suporte
+                                </Typography>
+                            </Box>
+                            <Box mx={1} className='cursor'>
+
+                                <Typography variant="h6" style={{ color: "#464248", background: "#fffd8b" }}>
+
+                                    Faça Parte
+                                </Typography>
+                            </Box>
+                            <Link to='/login' className='text-decorator-none'>
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" style={{ color: "white", background: "#464248" }}>
+                                        Logout
+                                    </Typography>
+                                </Box>
+                            </Link>
+                        </Box>
+                        </Box>
                 </Toolbar>
             </AppBar>
         </>
