@@ -59,21 +59,25 @@ function Navbar() {
                                 </Typography>
                             </Box>
                             <Box mx={1} className='cursor'>
-
+                            <Link to='/cadastroUsuario' className='text-decorator-none'>
+                                <Box mx={1} className='cursor'>
                                 <Typography variant="h6" style={{ color: "#464248", background: "#fffd8b" }}>
 
                                     Faça Parte
                                 </Typography>
+                                
                             </Box>
+                            </Link>
                             <Link to='/login' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
                                     <Typography variant="h6" style={{ color: "white", background: "#464248" }}>
-                                        Logout
+                                        Login
                                     </Typography>
                                 </Box>
                             </Link>
                         </Box>
                         </Box>
+                    </Box>    
                 </Toolbar>
             </AppBar>
         </>
