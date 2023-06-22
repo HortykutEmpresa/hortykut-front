@@ -1,5 +1,5 @@
 .caixa{
-    background-image: url("/src/assets/imagens/laranjeira_fundo.jpg");
+    background-color: antiquewhite;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -15,6 +15,6 @@
     color: white !important;
 }
 
-.postagens{
-    background-color: white;
+.produtos{
+    background-image: url(/src/assets/imagens/laranjeira_fundo.jpg);
 }
