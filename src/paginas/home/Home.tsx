@@ -6,7 +6,6 @@ import Depoimentos from "../depoimentos/Depoimentos";
 import Footer from "../../components/estaticos/footer/Footer";
 import './Home.css';
 import Navbar from "../../components/estaticos/navbar/Navbar";
-import Footer from "../../components/estaticos/footer/Footer";
 
 function Home() {
     return (
