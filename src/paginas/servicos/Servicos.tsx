@@ -106,7 +106,7 @@ function Servicos() {
                             Você sabe o que são conexões?
                         </Typography>
                         <Typography id="modal-modal" sx={{ mt: 2 }}>
-                            A conexão é uma estrutura que liga pequenos agricultores a revendedores, facilitando a venda e compra de produtos agrícolas.
+                            🍊A conexão é uma estrutura que liga pequenos agricultores a revendedores, facilitando a venda e compra de produtos agrícolas.
                             O objetivo principal dessa rede é proporcionar uma maior eficiência no comércio agrícola, reduzindo os custos de transação e aumentando a competitividade dos pequenos agricultores. Com a ajuda de revendedores, esses agricultores conseguem chegar a um mercado maior, aumentando assim suas chances de venda e lucro.
                         </Typography>
                     </Box>
