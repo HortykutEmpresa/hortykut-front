@@ -2,6 +2,7 @@ import React from "react";
 import {Typography, Grid} from '@material-ui/core';
 import {Box} from '@mui/material';
 import TabProdutos from "../../components/tabprodutos/TabProdutos";
+import Servicos from "../servicos/Servicos";
 import './Home.css';
 
 
@@ -22,6 +23,7 @@ function Home() {
                     <TabProdutos />
                 </Grid>
             </Grid>
+            <Servicos />
         </>
     );
 }
