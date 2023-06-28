@@ -17,63 +17,63 @@ function Navbar() {
                     <Box display="flex" justifyContent="start">
                         <Link to='/home' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" style={{ color: "white" }}>
+                                <Typography variant="h6">
                                     Home
                                 </Typography>
                             </Box>
                         </Link>
                         <Box display="flex" justifyContent="start">
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" style={{ color: "white" }}>
+                                <Typography variant="h6">
                                     Venda
                                 </Typography>
                             </Box>
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" style={{ color: "white" }}>
+                                <Typography variant="h6">
                                     Compra
                                 </Typography>
                             </Box>
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" style={{ color: "white" }}>
+                                <Typography variant="h6">
                                     Transporte
                                 </Typography>
                             </Box>
                             <Link to='/cursos' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
-                                    <Typography variant="h6" style={{ color: "white" }}>
+                                    <Typography variant="h6">
                                         Cursos
                                     </Typography>
                                 </Box>
                             </Link>
                             <Link to='/planos' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
-                                    <Typography variant="h6" style={{ color: "white" }}>
+                                    <Typography variant="h6">
                                         Planos
                                     </Typography>
                                 </Box>
                             </Link>
                             <Link to='/sobre' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
-                                    <Typography variant="h6" style={{ color: "white" }}>
+                                    <Typography variant="h6">
                                         Sobre Nós
                                     </Typography>
                                 </Box>
                             </Link>
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" style={{ color: "white" }}>
+                                <Typography variant="h6">
                                     Suporte
                                 </Typography>
                             </Box>
                             <Link to='/cadastroUsuario' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
-                                    <Typography variant="h6" style={{ color: "#464248", background: "#fffd8b" }}>
+                                    <Typography variant="h6">
                                         Faça Parte
                                     </Typography>
                                 </Box>
                             </Link>
                             <Link to='/login' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
-                                    <Typography variant="h6" style={{ color: "white", background: "#464248" }}>
+                                    <Typography variant="h6">
                                         Login
                                     </Typography>
                                 </Box>

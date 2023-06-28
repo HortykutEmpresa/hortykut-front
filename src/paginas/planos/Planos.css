@@ -8,16 +8,21 @@
     justify-content: center;          
 }
 
-.tituloAssinatura {
-    font-size: 2em !important;
+.tituloAssinatura {    
     font-family: 'Roboto', sans-serif;
-    margin-left: 1em !important;    
+    background-color: #EBCB8B;
+    color: white;    
 }
 
 .cards {    
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     background-size: 100%;
     flex-direction: row;
-    width: 1000px;
+    width: 1000px;    
+    padding: 1em;
+}
+
+.card {
+    background-color: aqua;
+    margin: 1em;
 }

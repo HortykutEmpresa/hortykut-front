@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Roboto&display=swap');
 
-.cursor{
+.cursor {
     cursor: pointer;
-    color: white;    
+    color: white;
+    padding-right: 1em;
 }
 
-.text-decorator-none{
+.cursor:hover {
+    background-color: #fffd8b;
+    color: #464248;
+    padding: 0.5em;
+}
+
+.text-decorator-none {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
 
-.appbar{
+.appbar {
     background-color: white !important;
 }
 
-.toolbar {  
+.toolbar {
     background-color: #ff7b00;
     display: flex;
     justify-content: space-between;

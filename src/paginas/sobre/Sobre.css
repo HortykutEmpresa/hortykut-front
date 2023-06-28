@@ -9,11 +9,9 @@
 
 .titulo {
   color: #464248 !important;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  text-align: center; 
 }
 
 .texto {
-  text-align: justify;
-  font-family: 'Roboto', sans-serif;   
+  text-align: justify;    
 }
