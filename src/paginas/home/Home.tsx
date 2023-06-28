@@ -2,14 +2,17 @@ import React from "react";
 import {Typography, Grid} from '@material-ui/core';
 import {Box} from '@mui/material';
 import TabProdutos from "../../components/tabprodutos/TabProdutos";
+
+import Servicos from "../servicos/Servicos";
+
 import Depoimentos from "../depoimentos/Depoimentos";
 import Footer from "../../components/estaticos/footer/Footer";
+
 import './Home.css';
 import Navbar from "../../components/estaticos/navbar/Navbar";
-<<<<<<< HEAD
-=======
+
 import ListaProdutos from "../../components/listaprodutos/ListaProdutos";
->>>>>>> 68335691c73658474a97e81c3aa82dd4de87638d
+
 
 function Home() {
     return (
@@ -29,7 +32,11 @@ function Home() {
                     <ListaProdutos />
                 </Grid>
             </Grid>
+
+            <Servicos />
+
             <Footer />
+
         </>
     );
 }
