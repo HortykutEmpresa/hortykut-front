@@ -1,7 +1,7 @@
 import React from "react";
 import {Typography, Grid} from '@material-ui/core';
 import {Box} from '@mui/material';
-import TabProdutos from "../../components/tabprodutos/TabProdutos";
+import TabProdutos from "../../components/produtos/tabprodutos/TabProdutos";
 
 import Servicos from "../servicos/Servicos";
 
@@ -11,13 +11,13 @@ import Footer from "../../components/estaticos/footer/Footer";
 import './Home.css';
 import Navbar from "../../components/estaticos/navbar/Navbar";
 
-import ListaProdutos from "../../components/listaprodutos/ListaProdutos";
+import ListaProdutos from "../../components/produtos/listaprodutos/ListaProdutos";
 
 
 function Home() {
     return (
         <>
-            <Navbar />
+            
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20}>
@@ -35,7 +35,7 @@ function Home() {
 
             <Servicos />
 
-            <Footer />
+            
 
         </>
     );
