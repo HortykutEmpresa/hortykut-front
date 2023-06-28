@@ -1,16 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Roboto&display=swap');
+
 .imgFooter {
     width: 35em;
     margin-top: 1em;
-}
-
-.box1 {
-    background-color: #3F51B5;
-    height: 120px;
-}
-
-.box2 {
-    background-color: #303F9F;
-    height: 60px;
 }
 
 .redes {
@@ -20,21 +12,31 @@
 
 .textos {
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em !important;
+    margin-right: 1em !important;
 }
 
 .caixaFooter {
-    background-image: url("/src/assets/imagens/laranjeira_fundo.jpg");
+    background-color: #FF7B00;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;    
 }
 
 .footer2 {
     width: 15em;
-    padding: 30px auto;
+    padding: 30px auto;    
 }
 
 .grid {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.copyright {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }

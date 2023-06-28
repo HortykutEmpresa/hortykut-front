@@ -1,20 +1,23 @@
-.caixa{
-    background-image: url("/src/assets/imagens/laranjeira_fundo.jpg");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Roboto&display=swap');
+
+.caixa {
+    background-color: antiquewhite;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.titulo{
-   color: white !important;
-   font-weight: bold !important;
+.titulo {
+    color: white !important;
+    font-weight: bold !important;
+    font-family: 'Roboto', sans-serif;
 }
 
-.botao{
+.botao {
     border-color: white !important;
     background-color: #3F51B5;
     color: white !important;
 }
 
-.postagens{
-    background-color: white;
+.produtos {
+    background-image: url(/src/assets/imagens/laranjeira_fundo.jpg);
 }
