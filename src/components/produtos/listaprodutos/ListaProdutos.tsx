@@ -37,7 +37,7 @@ function ListaProdutos() {
         <>
             <AppBar position="static" style={{ background: "#ffa200" }}>
                 <Tabs centered indicatorColor="secondary">
-                    <Tab label="Lista de todos os cursos" value="1" />
+                    <Tab label="Lista de todos os produtos" value="1" />
                 </Tabs>
             </AppBar>
             {
@@ -59,7 +59,10 @@ function ListaProdutos() {
                                         {produto.responsavel}
                                     </Typography>
                                     <Typography variant="body2" component="p">
-                                        {produto.texto}
+                                        {produto.descricao}
+                                    </Typography>
+                                    <Typography variant="body2" component="p">
+                                        {produto.foto}
                                     </Typography>
                                     <Typography variant="body2" component="p">
                                         {produto.categoria?.descricao}
