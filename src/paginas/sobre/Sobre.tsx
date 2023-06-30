@@ -21,21 +21,28 @@ function Sobre() {
             navigate("/login")
         }
     }, [token])
+
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixaSobre'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography className='titulo'>Sobre nós</Typography>
-                        <Typography className='texto'>Hortykut é um projeto inovador que tem como objetivo facilitar a conexão entre agricultores 👨‍🌾, transportadores 🚚 e comerciantes 🛒 no setor agrícola. A plataforma oferece um ambiente digital onde esses três atores-chave podem interagir de maneira eficiente e benéfica para todos.
-                            <br />
-                            Por meio do Hortykut, os agricultores têm a oportunidade de encontrar transportadores confiáveis e eficientes para levar seus produtos até os comerciantes. Da mesma forma, os comerciantes podem encontrar agricultores que oferecem produtos de qualidade para suprir suas demandas. Além disso, os transportadores podem encontrar agricultores e comerciantes para oferecer seus serviços de transporte.
-                            <br />
-                            Uma característica importante do Hortykut é a possibilidade de especialização. Oferecemos:
-                            <br />
-                            🍇 Pacotes de assinatura personalizados, nos quais os usuários podem escolher áreas específicas para se especializar, como transporte refrigerado, agricultura orgânica, entre outros. Ao se especializar, os usuários têm acesso a benefícios exclusivos, como maior visibilidade na plataforma, suporte técnico especializado e oportunidades de networking.
-                            <br />
-                            O Hortykut está revolucionando a forma como os profissionais do setor agrícola se conectam e colaboram, proporcionando eficiência, segurança e oportunidades de crescimento para todos os envolvidos. Junte-se a nós e faça parte dessa comunidade agrícola conectada!</Typography>
+                        <br />
+                        <Typography className='texto'> Hortykut é um projeto inovador que tem como objetivo facilitar a conexão entre agricultores 👨‍🌾, transportadores 🚚 e comerciantes 🛒 no setor agrícola. A plataforma oferece um ambiente digital onde esses três atores-chave podem interagir de maneira eficiente e benéfica para todos.
+                        <br />
+                        Por meio do Hortykut, os agricultores têm a oportunidade de encontrar transportadores confiáveis e eficientes para levar seus produtos até os comerciantes. Da mesma forma, os comerciantes podem encontrar agricultores que oferecem produtos de qualidade para suprir suas demandas. Além disso, os transportadores podem encontrar agricultores e comerciantes para oferecer seus serviços de transporte.
+                        <br />
+                        Uma característica importante do Hortykut é a possibilidade de especialização. Oferecemos:
+                        <br />
+                        <br />
+                        🍇 Pacotes de assinatura personalizados, nos quais os usuários podem escolher áreas específicas para se especializar, como transporte refrigerado, agricultura orgânica, entre outros.
+                        <br />
+                        <br /> 
+                        🍇 Ao se especializar, os usuários têm acesso a benefícios exclusivos, como maior visibilidade na plataforma, suporte técnico especializado e oportunidades de networking.
+                        <br />
+                        <br />
+                        O Hortykut está revolucionando a forma como os profissionais do setor agrícola se conectam e colaboram, proporcionando eficiência, segurança e oportunidades de crescimento para todos os envolvidos. Junte-se a nós e faça parte dessa comunidade agrícola conectada!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
