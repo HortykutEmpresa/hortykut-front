@@ -4,13 +4,16 @@ import { Card, CardActions, CardContent, Button, Typography, Grid, AppBar, Tabs,
 import { Box } from '@mui/material';
 import './ListaProdutos.css';
 import Produtos from '../../../models/Produtos';
-import useLocalStorage from 'react-use-localstorage';
 import { busca } from '../../../services/Service';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function ListaProdutos() {
     const [produtos, setProdutos] = useState<Produtos[]>([])
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
         if (token == "") {

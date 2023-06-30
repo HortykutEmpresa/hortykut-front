@@ -1,20 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Typography, Grid, Box } from '@material-ui/core';
 import { typography } from '@material-ui/system';
 import Servicos from "../servicos/Servicos";
 import './Home.css';
 import ListaProdutos from "../../components/produtos/listaprodutos/ListaProdutos";
 import ModalProduto from "../../components/produtos/modalProdutos/ModalProdutos";
+import { useSelector } from "react-redux";
+import { TokenState } from "../../store/tokens/tokensReducer";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+    let navigate = useNavigate();
+
+    useEffect(() => {
+        if (token == '') {
+            alert("Você precisa estar logado")
+            navigate("/login")
+        }
+    }, [token])
     return (
         <>
 
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
+<<<<<<< HEAD
                     <Box paddingX={22} className="caixaTexto">
                         <Typography  gutterBottom color="textPrimary"  align="center" className='titulo'>Aumente seus contatos e sua formação como pequeno produtor</Typography>
                         <Typography  gutterBottom color="textPrimary"  align="center" className='titulo2' >Quando você compra ou anuncia o seu produto, podemos te ajudar</Typography>
+=======
+                    <Box paddingX={20}>
+                        <Typography gutterBottom color="textPrimary" align="center" className='titulo'>Aumente seus contatos e sua formação como pequeno produtor</Typography>
+                        <Typography gutterBottom color="textPrimary" align="center" className='titulo' >Esteja você comprando, anunciando ou alugando, podemos ajudá-lo</Typography>
+>>>>>>> 2e8bf47e62528ff5aebc7da15cc326a86efb87ff
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
@@ -24,11 +45,11 @@ function Home() {
                     <ListaProdutos />
                 </Grid>
                 <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <ModalProduto />
-                        </Box>
-                        
+                    <Box marginRight={1}>
+                        <ModalProduto />
                     </Box>
+
+                </Box>
             </Grid>
 
             <Servicos />

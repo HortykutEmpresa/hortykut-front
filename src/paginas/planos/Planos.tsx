@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -8,20 +8,34 @@ import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 import './Planos.css'
 import { Grid } from '@material-ui/core';
-import Navbar from '../../components/estaticos/navbar/Navbar';
-import Footer from '../../components/estaticos/footer/Footer';
 import { borders, typography } from '@material-ui/system';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
+import { useNavigate } from 'react-router-dom';
 
 function Planos() {
+
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+    let navigate = useNavigate();
+
+    useEffect(() => {
+        if (token == '') {
+            alert("Você precisa estar logado")
+            navigate("/login")
+        }
+    }, [token])
+
     return (
         <>
-            <Navbar />
-            <Typography variant="h6" className='tituloAssinatura' sx={{fontWeight: 'bold', textAlign: 'center', fontSize: 30, width: '100%'}}>
+            
+            <Typography variant="h6" className='tituloAssinatura' sx={{ fontWeight: 'bold', textAlign: 'center', fontSize: 30, width: '100%' }}>
                 Planos de Assinatura
             </Typography>
             <Grid className='gridPlano'>
                 <Grid item xs={6}>
-                    <img src="src/assets/imagens/Environment-amico.png" alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" style={{width: '53em'}} />
+                    <img src="src/assets/imagens/Environment-amico.png" alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" style={{ width: '53em' }} />
                 </Grid>
                 <Grid className='cards'>
                     <Box mx={2} display="flex">
@@ -99,7 +113,7 @@ function Planos() {
                     </Box>
                 </Grid>
             </Grid>
-            <Footer />
+            
         </>
     );
 }
