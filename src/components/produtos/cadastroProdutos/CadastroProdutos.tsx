@@ -3,15 +3,18 @@ import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem,
 import './CadastroProdutos.css';
 import { useNavigate, useParams } from 'react-router-dom'
 import { busca, buscaId, post, put } from '../../../services/Service';
-import useLocalStorage from 'react-use-localstorage';
 import Categoria from '../../../models/Categoria';
 import Produtos from '../../../models/Produtos';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function CadastroProdutos() {
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
     const [categorias, setCategorias] = useState<Categoria[]>([])
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
         if (token == "") {

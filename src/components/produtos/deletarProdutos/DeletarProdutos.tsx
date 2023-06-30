@@ -3,13 +3,16 @@ import { Typography, Button, Card, CardActions, CardContent } from "@material-ui
 import { Box } from '@mui/material';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useNavigate, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import Produtos from '../../../models/Produtos';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function DeletarProdutos() {
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
     const [produtos, setProdutos] = useState<Produtos>()
 
     useEffect(() => {
