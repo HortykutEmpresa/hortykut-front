@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Grid, Box } from '@material-ui/core';
-
+import { typography } from '@material-ui/system';
 import Servicos from "../servicos/Servicos";
 import './Home.css';
 import ListaProdutos from "../../components/produtos/listaprodutos/ListaProdutos";
@@ -13,8 +13,8 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Aumente seus contatos e sua formação como pequeno produtor</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Esteja você comprando, anunciando ou alugando, podemos ajudá-lo</Typography>
+                        <Typography  gutterBottom color="textPrimary"  align="center" className='titulo'style={{fontSize: "10px"}}>Aumente seus contatos e sua formação como pequeno produtor</Typography>
+                        <Typography  gutterBottom color="textPrimary"  align="center" className='titulo' style={{fontSize: "10px"}}>Esteja você comprando, anunciando ou alugando, podemos ajudá-lo</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
