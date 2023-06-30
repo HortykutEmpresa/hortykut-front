@@ -4,14 +4,23 @@
     background-color: antiquewhite;
     background-repeat: no-repeat;
     background-size: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
   
 }
 
 .titulo {
-    color: white !important;
     font-weight: bold !important;
     font-family: 'Roboto', sans-serif;
-    font-size: 2em !important;
+    font-size: 3em !important;
+}
+
+.titulo2 {
+    color: #464248;
+    font-weight: bold !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em !important;
+    padding-top: 1em;
   
 }
 
@@ -23,4 +32,9 @@
 
 .produtos {
     background-image: url(/src/assets/imagens/laranjeira_fundo.jpg);
+}
+.caixaTexto{
+    width: 50.5em;
+    text-shadow:1px 1px 2px #ebcb8b;
+   padding: 7.5em !important;
 }
