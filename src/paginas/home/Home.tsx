@@ -13,8 +13,8 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20}>
-                        <Typography  gutterBottom color="textPrimary"  align="center" className='titulo'style={{fontSize: "10px"}}>Aumente seus contatos e sua formação como pequeno produtor</Typography>
-                        <Typography  gutterBottom color="textPrimary"  align="center" className='titulo' style={{fontSize: "10px"}}>Esteja você comprando, anunciando ou alugando, podemos ajudá-lo</Typography>
+                        <Typography  gutterBottom color="textPrimary"  align="center" className='titulo'>Aumente seus contatos e sua formação como pequeno produtor</Typography>
+                        <Typography  gutterBottom color="textPrimary"  align="center" className='titulo' >Esteja você comprando, anunciando ou alugando, podemos ajudá-lo</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
