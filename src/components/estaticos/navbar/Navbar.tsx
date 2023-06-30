@@ -23,21 +23,7 @@ function Navbar() {
                             </Box>
                         </Link>
                         <Box display="flex" justifyContent="start">
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6">
-                                    Venda
-                                </Typography>
-                            </Box>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6">
-                                    Compra
-                                </Typography>
-                            </Box>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6">
-                                    Transporte
-                                </Typography>
-                            </Box>
+                            
                             <Link to='/cursos' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
                                     <Typography variant="h6">
@@ -59,11 +45,6 @@ function Navbar() {
                                     </Typography>
                                 </Box>
                             </Link>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6">
-                                    Suporte
-                                </Typography>
-                            </Box>
                             <Link to='/cadastroUsuario' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
                                     <Typography variant="h6">
@@ -73,8 +54,8 @@ function Navbar() {
                             </Link>
                             <Link to='/login' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
-                                    <Typography variant="h6">
-                                        Login
+                                    <Typography variant="h6" style={{color:"#464248"}}>
+                                        Logout
                                     </Typography>
                                 </Box>
                             </Link>

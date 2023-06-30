@@ -31,7 +31,8 @@ function CadastroProdutos() {
         produto: '',
         valor: 0,
         responsavel: '',
-        texto: '',
+        descricao: '',
+        foto: '',
         categoria: null
     })
 
@@ -105,11 +106,12 @@ function CadastroProdutos() {
         <>
             <Container maxWidth="sm" className="topo">
                 <form onSubmit={onSubmit}>
-                    <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
+                    <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastro de serviços</Typography>
                     <TextField value={produto.produto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="produto" label="produto" variant="outlined" name="produto" margin="normal" fullWidth />
                     <TextField value={produto.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="valor" label="valor" variant="outlined" name="valor" margin="normal" fullWidth />
+                    <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="foto" variant="outlined" name="foto" margin="normal" fullWidth />
                     <TextField value={produto.responsavel} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="responsavel" label="responsavel" variant="outlined" name="responsavel" margin="normal" fullWidth />
-                    <TextField value={produto.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
+                    <TextField value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="descricao" label="descricao" name="descricao" variant="outlined" margin="normal" fullWidth />
 
                     <FormControl >
                         <InputLabel id="demo-simple-select-helper-label">Categoria </InputLabel>
