@@ -4,6 +4,7 @@
     cursor: pointer;
     color: white;
     padding-right: 1em;
+    text-shadow:1.5px 1.5px 2px #464248
 }
 
 .cursor:hover {
