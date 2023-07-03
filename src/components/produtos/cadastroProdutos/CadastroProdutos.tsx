@@ -7,6 +7,7 @@ import Categoria from '../../../models/Categoria';
 import Produtos from '../../../models/Produtos';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function CadastroProdutos() {
     let navigate = useNavigate();
@@ -18,7 +19,16 @@ function CadastroProdutos() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error("Você precisa estar logado", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
 
         }
@@ -88,14 +98,32 @@ function CadastroProdutos() {
                     'Authorization': token
                 }
             })
-            alert('Produto atualizado com sucesso');
+            toast.success("Produto atualizado com sucesso", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         } else {
             post(`/produto`, produto, setProduto, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Produto cadastrado com sucesso');
+            toast.success("Produto cadastrado com sucesso", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
         back()
 
@@ -109,12 +137,12 @@ function CadastroProdutos() {
         <>
             <Container maxWidth="sm" className="topo" style={{background:"antiquewhite", borderRadius:"15px solid black"}}>
                 <form onSubmit={onSubmit}>
-                    <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastro de serviços</Typography>
-                    <TextField value={produto.produto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="produto" label="produto" variant="outlined" name="produto" margin="normal" fullWidth />
-                    <TextField value={produto.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="valor" label="valor" variant="outlined" name="valor" margin="normal" fullWidth />
-                    <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="foto" variant="outlined" name="foto" margin="normal" fullWidth />
-                    <TextField value={produto.responsavel} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="responsavel" label="responsavel" variant="outlined" name="responsavel" margin="normal" fullWidth />
-                    <TextField value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="descricao" label="descricao" name="descricao" variant="outlined" margin="normal" fullWidth />
+                    <Typography variant="h3" color="textSecondary" component="h1" align="center">Cadastro de serviços</Typography>
+                    <TextField value={produto.produto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="produto" label="Produto" variant="outlined" name="produto" margin="normal" fullWidth />
+                    <TextField value={produto.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="valor" label="Valor" variant="outlined" name="valor" margin="normal" fullWidth />
+                    <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="Foto" variant="outlined" name="foto" margin="normal" fullWidth />
+                    <TextField value={produto.responsavel} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="responsavel" label="Responsável pelo cadastro" variant="outlined" name="responsavel" margin="normal" fullWidth />
+                    <TextField value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="descricao" label="Descrição" name="descricao" variant="outlined" margin="normal" fullWidth />
 
                     <FormControl >
                         <InputLabel id="demo-simple-select-helper-label">Categoria </InputLabel>

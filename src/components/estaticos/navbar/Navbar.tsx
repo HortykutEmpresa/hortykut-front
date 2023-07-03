@@ -6,6 +6,7 @@ import { Box } from '@mui/material';
 import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import { addToken } from "../../../store/tokens/actions";
+import { toast } from "react-toastify";
 
 function Navbar() {
 
@@ -15,11 +16,20 @@ function Navbar() {
     let navigate = useNavigate();
     const dispatch = useDispatch();
 
-        
+
 
     function goLogout() {
         dispatch(addToken(''));
-        alert("Você precisa estar logado");
+        toast.error("Você precisa estar logado", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
         navigate('/login')
     }
 
@@ -43,19 +53,26 @@ function Navbar() {
                     </Link>
                     <Box display="flex" justifyContent="start">
 
-                        <Link to='/cursos' className='text-decorator-none'>
+                        <Link to='/formularioCategoria' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6">
-                                    Cursos
+                                    Cadastrar Categoria
                                 </Typography>
                             </Box>
                         </Link>
                         <Box display="flex" justifyContent="start">
-                            
+
                             <Link to='/cursos' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
                                     <Typography variant="h6">
                                         Cursos
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Link to='/categoria' className='text-decorator-none'>
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6">
+                                        Categorias
                                     </Typography>
                                 </Box>
                             </Link>
@@ -81,8 +98,8 @@ function Navbar() {
                                 </Box>
                             </Link>
                             <Link to='/login' className='text-decorator-none'>
-                                <Box mx={1} className='cursor'>
-                                    <Typography variant="h6" style={{color: "#464248"}}>
+                                <Box mx={1} className='cursor' onClick={goLogout}>
+                                    <Typography variant="h6" style={{ color: "#464248" }}>
                                         Logout
                                     </Typography>
                                 </Box>
