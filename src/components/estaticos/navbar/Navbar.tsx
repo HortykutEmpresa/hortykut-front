@@ -50,7 +50,6 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-<<<<<<< HEAD
                         <Box display="flex" justifyContent="start">
                             
                             <Link to='/cursos' className='text-decorator-none'>
@@ -88,34 +87,6 @@ function Navbar() {
                                     </Typography>
                                 </Box>
                             </Link>
-=======
-                        <Link to='/planos' className='text-decorator-none'>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6">
-                                    Planos
-                                </Typography>
-                            </Box>
-                        </Link>
-                        <Link to='/sobre' className='text-decorator-none'>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6">
-                                    Sobre Nós
-                                </Typography>
-                            </Box>
-                        </Link>
-                        <Link to='/cadastroUsuario' className='text-decorator-none'>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6">
-                                    Faça Parte
-                                </Typography>
-                            </Box>
-                        </Link>
-
-                        <Box mx={1} className='cursor' onClick={goLogout}>
-                            <Typography variant="h6" style={{ color: "#464248" }}>
-                                Logout
-                            </Typography>
->>>>>>> 2e8bf47e62528ff5aebc7da15cc326a86efb87ff
                         </Box>
 
                     </Box>

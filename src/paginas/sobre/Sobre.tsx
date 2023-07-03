@@ -43,7 +43,7 @@ function Sobre() {
                     </Box>
                 </Grid>
                 <Grid item xs={6}>
-                    <img src="src/assets/imagens/Farmer-amico.png" alt="Ilustração de um fazendeiro com uma caixa de maçãs nas mãos e galinhas ao solo." style={{ width: '1000px' }} />
+                    <img src="src/assets/imagens/Farmer-amico.png" alt="Ilustração de um fazendeiro com uma caixa de maçãs nas mãos e galinhas ao solo." style={{ width: '700px' }} />
                 </Grid>
             </Grid>
         </>

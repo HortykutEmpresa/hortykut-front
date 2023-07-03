@@ -30,7 +30,7 @@ function Planos() {
     return (
         <>
             
-            <Typography variant="h6" className='tituloAssinatura' sx={{ fontWeight: 'bold', textAlign: 'center', fontSize: 30, width: '100%' }}>
+            <Typography variant="h6" className='tituloAssinatura' sx={{ fontWeight: 'bold', textAlign: 'center', fontSize: 35, width: '100%' }}>
                 Planos de Assinatura
             </Typography>
             <Grid className='gridPlano'>
