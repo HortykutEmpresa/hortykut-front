@@ -2,7 +2,6 @@
 
 .gridPlano {
     background-color: antiquewhite;
-    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;          
@@ -11,7 +10,8 @@
 .tituloAssinatura {    
     font-family: 'Roboto', sans-serif;
     background-color: #EBCB8B;
-    color: white;    
+    color: white;  
+    width: 100% !important;  
 }
 
 .cards {    
