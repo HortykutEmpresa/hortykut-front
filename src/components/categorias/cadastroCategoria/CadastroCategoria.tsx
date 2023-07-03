@@ -67,19 +67,37 @@ function CadastroCategoria() {
 
         if (id !== undefined) {
             console.log(categoria)
-            put(`/categoria`, categoria, setCategoria, {
+            put(`/categoria/${id}`, categoria, setCategoria, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Categoria atualizada com sucesso');
+            toast.success('Categoria atualizada com sucesso', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         } else {
             post(`/categoria`, categoria, setCategoria, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Categoria cadastrada com sucesso');
+            toast.success('Categoria cadastrada com sucesso', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
         back()
 
