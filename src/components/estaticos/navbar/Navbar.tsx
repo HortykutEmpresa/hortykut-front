@@ -43,10 +43,10 @@ function Navbar() {
                     </Link>
                     <Box display="flex" justifyContent="start">
 
-                        <Link to='/cursos' className='text-decorator-none'>
+                        <Link to='/formularioCategoria' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6">
-                                    Cursos
+                                    Cadastrar Categoria
                                 </Typography>
                             </Box>
                         </Link>
@@ -56,6 +56,13 @@ function Navbar() {
                                 <Box mx={1} className='cursor'>
                                     <Typography variant="h6">
                                         Cursos
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Link to='/categoria' className='text-decorator-none'>
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6">
+                                        Categorias
                                     </Typography>
                                 </Box>
                             </Link>
@@ -81,7 +88,7 @@ function Navbar() {
                                 </Box>
                             </Link>
                             <Link to='/login' className='text-decorator-none'>
-                                <Box mx={1} className='cursor'>
+                                <Box mx={1} className='cursor' onClick={goLogout}>
                                     <Typography variant="h6" style={{color: "#464248"}}>
                                         Logout
                                     </Typography>
