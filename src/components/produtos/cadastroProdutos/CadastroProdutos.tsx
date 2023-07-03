@@ -135,7 +135,7 @@ function CadastroProdutos() {
 
     return (
         <>
-            <Container maxWidth="sm" className="topo">
+            <Container maxWidth="sm" className="topo" style={{background:"antiquewhite", borderRadius:"15px solid black"}}>
                 <form onSubmit={onSubmit}>
                     <Typography variant="h3" color="textSecondary" component="h1" align="center">Cadastro de serviços</Typography>
                     <TextField value={produto.produto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="produto" label="Produto" variant="outlined" name="produto" margin="normal" fullWidth />
@@ -161,7 +161,7 @@ function CadastroProdutos() {
                             }
                         </Select>
                         <FormHelperText>Escolha um tema para o produto</FormHelperText>
-                        <Button type="submit" variant="contained" color="primary">
+                        <Button type="submit" variant="contained" style={{background:"#ff7b00", color:"white"}}>
                             Finalizar
                         </Button>
                     </FormControl>
