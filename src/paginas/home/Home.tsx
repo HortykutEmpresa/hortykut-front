@@ -8,6 +8,7 @@ import ModalProduto from "../../components/produtos/modalProdutos/ModalProdutos"
 import { useSelector } from "react-redux";
 import { TokenState } from "../../store/tokens/tokensReducer";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Home() {
 
@@ -18,7 +19,16 @@ function Home() {
 
     useEffect(() => {
         if (token == '') {
-            alert("Você precisa estar logado")
+            toast.error("Você precisa estar logado", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
         }
     }, [token])
@@ -28,8 +38,8 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={22} className="caixaTexto">
-                        <Typography  gutterBottom color="textPrimary"  align="center" className='titulo'>Aumente seus contatos e sua formação como pequeno produtor</Typography>
-                        <Typography  gutterBottom color="textPrimary"  align="center" className='titulo2' >Quando você compra ou anuncia o seu produto, podemos te ajudar</Typography>
+                        <Typography gutterBottom color="textPrimary" align="center" className='titulo'>Aumente seus contatos e sua formação como pequeno produtor</Typography>
+                        <Typography gutterBottom color="textPrimary" align="center" className='titulo2' >Quando você compra ou anuncia o seu produto, podemos te ajudar</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
