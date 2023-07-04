@@ -4,17 +4,30 @@ import { Card, CardActions, CardContent, Button, Typography, Grid, AppBar, Tabs,
 import { Box } from '@mui/material';
 import './ListaProdutos.css';
 import Produtos from '../../../models/Produtos';
-import useLocalStorage from 'react-use-localstorage';
 import { busca } from '../../../services/Service';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function ListaProdutos() {
     const [produtos, setProdutos] = useState<Produtos[]>([])
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error("Você precisa estar logado", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
 
         }
@@ -37,7 +50,7 @@ function ListaProdutos() {
         <>
             <AppBar position="static" style={{ background: "#ffa200" }}>
                 <Tabs centered indicatorColor="secondary">
-                    <Tab label="Lista de todos os cursos" value="1" />
+                    <Tab label="Lista de todos os produtos" value="1" />
                 </Tabs>
             </AppBar>
             {
@@ -59,7 +72,10 @@ function ListaProdutos() {
                                         {produto.responsavel}
                                     </Typography>
                                     <Typography variant="body2" component="p">
-                                        {produto.texto}
+                                        {produto.descricao}
+                                    </Typography>
+                                    <Typography variant="body2" component="p">
+                                        <img src={produto.foto} alt="" />
                                     </Typography>
                                     <Typography variant="body2" component="p">
                                         {produto.categoria?.descricao}

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Roboto&display=swap');
 
 .imgFooter {
-    width: 35em;
+    width: 26em !important;
     margin-top: 1em;
-    
+    border-radius: 2em;
+    height: 18em;
 }
 
 .redes {
@@ -25,7 +26,7 @@
 }
 
 .footer2 {
-    width: 15em;
+    width: 7.5em;
     padding: 30px auto;    
 }
 

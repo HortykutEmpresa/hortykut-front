@@ -4,12 +4,16 @@
     cursor: pointer;
     color: white;
     padding-right: 1em;
+    text-shadow:1.5px 1.5px 2px #464248
 }
 
 .cursor:hover {
     background-color: #fffd8b;
     color: #464248;
     padding: 0.5em;
+    height: 1.5em;
+    border-radius: 1em !important;
+    padding: 0 1em 0.5em 1em;
 }
 
 .text-decorator-none {
@@ -27,4 +31,5 @@
     justify-content: space-between;
     margin-bottom: 1em;
     border-radius: 0 5px 5px 0 solid #ff7b00 !important;
+    height: 4em !important;
 }

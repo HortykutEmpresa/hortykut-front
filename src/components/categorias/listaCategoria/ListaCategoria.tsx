@@ -4,18 +4,31 @@ import { Card, CardActions, CardContent, Button, Typography } from '@material-ui
 import { Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom'
 import { busca } from '../../../services/Service';
-import useLocalStorage from 'react-use-localstorage';
 import Categoria from '../../../models/Categoria';
 import './ListaCategoria.css';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function ListaCategoria() {
     const [categoria, setCategoria] = useState<Categoria[]>([])
-    const [token, setToken] = useLocalStorage('token')
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
     let navigate = useNavigate();
 
     useEffect(() => {
         if (token == '') {
-            alert("Você precisa estar logado")
+            toast.error("Você precisa estar logado", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
         }
     }, [token])
@@ -54,14 +67,14 @@ function ListaCategoria() {
                                     <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                                                atualizar
+                                                Atualizar
                                             </Button>
                                         </Box>
                                     </Link>
                                     <Link to={`/deletarCategoria/${categoria.id}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size='small' color="secondary">
-                                                deletar
+                                                Deletar
                                             </Button>
                                         </Box>
                                     </Link>

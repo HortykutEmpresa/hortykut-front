@@ -5,7 +5,8 @@ interface Produto {
     produto: string;
     valor: number;
     responsavel: string;
-    texto: string;
+    descricao: string;
+    foto: string;
     categoria?: Categoria | null
 }
 
