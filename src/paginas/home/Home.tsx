@@ -9,6 +9,8 @@ import { useSelector } from "react-redux";
 import { TokenState } from "../../store/tokens/tokensReducer";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import imgLogin from "../../assets/imagens/Country-side-cuate.png"
+
 
 function Home() {
 
@@ -43,7 +45,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="/src/assets/imagens/Country-side-cuate.png" alt="Ilustração de fazendeira com livro na mão, sentada no chão, apoiada em um quadrado de feno, com uma cerca branca e árvores ao fundo" style={{ width: '53em' }} />
+                    <img src={imgLogin} alt="Ilustração de fazendeira com livro na mão, sentada no chão, apoiada em um quadrado de feno, com uma cerca branca e árvores ao fundo" style={{ width: '53em' }} />
                 </Grid>
                 <Grid xs={12} className='produtos'>
                     <ListaProdutos />
