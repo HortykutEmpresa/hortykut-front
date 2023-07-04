@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import { addToken } from "../../../store/tokens/actions";
 import { toast } from "react-toastify";
+import imgLogo from "../../../assets/imagens/logo-texto-transparente.png";
 
 function Navbar() {
 
@@ -15,8 +16,6 @@ function Navbar() {
     );
     let navigate = useNavigate();
     const dispatch = useDispatch();
-
-
 
     function goLogout() {
         dispatch(addToken(''));
@@ -40,7 +39,7 @@ function Navbar() {
             <Toolbar variant="dense" className='toolbar'>
                 <Link to='/home' className='text-decorator-none'>
                     <Box className='cursor'>
-                        <img src="/src/assets/imagens/logo-texto-transparente.png" alt="Logo horizontal transparente" style={{ width: "9em" }} />
+                        <img src={imgLogo} alt="Logo horizontal transparente" style={{width: "9em"}} />
                     </Box>
                 </Link>
                 <Box display="flex" justifyContent="start">
@@ -61,7 +60,6 @@ function Navbar() {
                             </Box>
                         </Link>
                         <Box display="flex" justifyContent="start">
-
                             <Link to='/cursos' className='text-decorator-none'>
                                 <Box mx={1} className='cursor'>
                                     <Typography variant="h6">
@@ -99,13 +97,12 @@ function Navbar() {
                             </Link>
                             <Link to='/login' className='text-decorator-none'>
                                 <Box mx={1} className='cursor' onClick={goLogout}>
-                                    <Typography variant="h6" style={{ color: "#464248" }}>
+                                    <Typography variant="h6" style={{color: "#464248"}}>
                                         Logout
                                     </Typography>
                                 </Box>
                             </Link>
                         </Box>
-
                     </Box>
                 </Box>
             </Toolbar>

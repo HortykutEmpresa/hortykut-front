@@ -9,8 +9,7 @@ import { useSelector } from "react-redux";
 import { TokenState } from "../../store/tokens/tokensReducer";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import imgLogin from "../../assets/imagens/Country-side-cuate.png"
-
+import imgLogin from "../../assets/imagens/Country-side-cuate.png";
 
 function Home() {
 
@@ -34,9 +33,9 @@ function Home() {
             navigate("/login")
         }
     }, [token])
+
     return (
         <>
-
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={22} className="caixaTexto">
@@ -45,7 +44,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src={imgLogin} alt="Ilustração de fazendeira com livro na mão, sentada no chão, apoiada em um quadrado de feno, com uma cerca branca e árvores ao fundo" style={{ width: '53em' }} />
+                    <img src={imgLogin} alt="Ilustração de fazendeira com livro na mão, sentada no chão, apoiada em um quadrado de feno, com uma cerca branca e árvores ao fundo" style={{width: '53em'}} />
                 </Grid>
                 <Grid xs={12} className='produtos'>
                     <ListaProdutos />
@@ -54,14 +53,9 @@ function Home() {
                     <Box marginRight={1}>
                         <ModalProduto />
                     </Box>
-
                 </Box>
             </Grid>
-
             <Servicos />
-
-
-
         </>
     );
 }

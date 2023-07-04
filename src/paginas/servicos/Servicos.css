@@ -1,0 +1,8 @@
+.cardsMent {
+    display: flex;
+    justify-content: center;
+}
+
+.cardMentoria {
+    margin-right: 2em;
+}
