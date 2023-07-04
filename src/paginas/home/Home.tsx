@@ -43,7 +43,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="/src/assets/imagens/Country-side-cuate.png" alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" style={{ width: '53em' }} />
+                    <img src="/src/assets/imagens/Country-side-cuate.png" alt="Ilustração de fazendeira com livro na mão, sentada no chão, apoiada em um quadrado de feno, com uma cerca branca e árvores ao fundo" style={{ width: '53em' }} />
                 </Grid>
                 <Grid xs={12} className='produtos'>
                     <ListaProdutos />

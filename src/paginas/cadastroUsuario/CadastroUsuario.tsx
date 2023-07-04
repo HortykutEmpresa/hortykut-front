@@ -40,12 +40,10 @@ function CadastroUsuario() {
     }
 
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-
         setUser({
             ...user,
             [e.target.name]: e.target.value
         })
-
     }
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
