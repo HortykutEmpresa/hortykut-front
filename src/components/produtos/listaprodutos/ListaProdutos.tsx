@@ -63,7 +63,7 @@ function ListaProdutos() {
                                         Produtos
                                     </Typography>
                                     <Typography variant="h5" component="h2">
-                                        {produto.produto}
+                                        {produto.titulo}
                                     </Typography>
                                     <Typography variant="body2" component="p">
                                         {produto.valor}
